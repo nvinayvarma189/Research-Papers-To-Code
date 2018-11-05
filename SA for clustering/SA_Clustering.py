@@ -45,7 +45,7 @@ def action_on(p):
     perturbed_state = p.copy() # state upon which the action is done
     i = random.randint(1,n) # choose a random object
     while (True):
-        m = random.randint(0, len(l)) # index of the random object
+        m = random.randint(0, len(l)) # a random integer
         if len(l) == k or m>0:
             index1 = random.randint(0,len(l)-1)
             perturbed_state[i] = l[index1]
